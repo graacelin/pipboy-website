@@ -148,6 +148,15 @@ body::after {
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(1) brightness(1) contrast(2);
 }
 
+.radio-image {
+    text-align: center;
+}
+
+.radio-image img {
+    margin-top:100px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(1) brightness(1) contrast(2);
+}
+
 .stat-bar {
     width: 60px;
     margin: auto;
@@ -617,6 +626,20 @@ body::after {
 #mediPlay {
     display:none;
 }
+
+.click {
+    display:none;
+}
+
+#show:hover~.click {
+    display:block;
+}
+
+#content:hover~#b{
+    display: block;
+}
+
+
 
 @keyframes scan {
     100% { transform: translate(0, 100vh); }
