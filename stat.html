@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- todos:
+  add back all the icons
+  fix gun poopy positioning
+  change all perk image positioning
+  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipboy</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pipboy.app.css">
+</head>
+<body>
+
+  <div class="scan"></div>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="main-nav nav-link active" aria-current="page" href="stat.html">STAT</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link" href="inv.html">INV</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link" href="#">DATA</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link" href="#">MAP</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link" href="#">RADIO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="sub-nav nav-link active" id="status-tab" data-bs-toggle="tab" data-bs-target="#status" type="button" role="tab" aria-controls="status" aria-selected="true">STATUS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="sub-nav nav-link second-tab" id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab" aria-controls="special" aria-selected="false">SPECIAL</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="sub-nav nav-link third-tab" id="perks-tab"   data-bs-toggle="tab" data-bs-target="#perks" type="button" role="tab" aria-controls="perks" aria-selected="false">PERKS</button>
+            </li>
+    </ul>
+
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">
+        <div class="center-image">
+          <img src="misc/vaultboy.gif">
+        </div>
+
+        <div class="stat-bars">
+
+
+            <div class="row">
+              <div class="col-12">
+                <div class="stat-bar">
+                  <div class="level-progress">
+                    <div class="level-progress-indicator w100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3">
+                <div class="stat-bar">
+                  <div class="level-progress">
+                    <div class="level-progress-indicator w40"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+              </div>
+
+              <div class="col-3">
+                <div class="stat-bar">
+                  <div class="level-progress">
+                    <div class="level-progress-indicator w50"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              
+              <div class="col-3">
+                <div class="stat-bar">
+                  <div class="level-progress">
+                    <div class="level-progress-indicator w60"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+              </div>
+
+              <div class="col-3">
+                <div class="stat-bar">
+                  <div class="level-progress">
+                    <div class="level-progress-indicator w80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                      
+        
+
+          <div class="row">
+            <div class="col-12">
+              <div class="stat-bar">
+                <div class="level-progress">
+                  <div class="level-progress-indicator w10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+          <!-- <div class="row icons">
+
+            <div class="col-2 transparent"></div>
+            <div class="col-2">
+              <img src="pistol-icon.png" class="image-responsive">
+            </div>
+            <div class="col-1">
+              <div class="icon">
+                <img src="crosshair-icon.png" class="image-responsive">
+              </div>
+              <div class="points">18</div>
+            </div>
+
+            <div class="col-1 transparent"></div>
+            
+            <div class="col-2">B</div>
+            <div class="col-1">
+              <div class="icon">D</div>
+              <div class="points">18</div>
+            </div>
+
+            <div class="col-1">
+              <div class="icon">R</div>
+              <div class="points">18</div>
+            </div>
+            <div class="col-2 transparent"></div>
+          </div> -->
+      </div> 
+
+      <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+          <ul class="special-list">
+            <li>
+              <a href="#" class="strength">Strength  
+                <span class="pull-right"> 2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="perception">Perception
+                <span class="pull-right"> 2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="endurance">Endurance
+              <span class="pull-right"> 3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="charisma">Charisma
+                <span class="pull-right"> 3</span>
+              </a>
+            </li>
+            <li><a href="#" class="intelligence">Intelligence
+              <span class="pull-right"> 6</span>
+            </a>
+          </li>
+            <li><a href="#" class="agility">Agility
+              <span class="pull-right"> 2</span>
+            </a>
+          </li>
+            <li><a href="#" class="luck">Luck
+              <span class="pull-right"> 1</span>
+            </a>
+          </li>
+        </ul>
+        <div class="special-stats" style="margin:0 auto;">
+          <img class="special-img" src="specials/strength.gif">
+          <div class="special-desc"> Strength is a measure of your raw physical power. It affects how much you can carry, and determines the effectiveness of all melee attacks. </div>
+        </div>
+
+
+    </div>
+      <div class="tab-pane fade" id="perks" role="tabpanel" aria-labelledby="perks-tab">
+        <ul class="perk-list">
+          <li>
+            <a href="#" class="mister_sandman">
+              Mister Sandman 
+            </a>
+          </li>
+          <li>
+            <a href="#" class="aquaboy">
+              Aquaboy
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hacker">
+              Hacker
+            </a>
+          </li>
+      </ul>
+      <div class="perk-stats" style="margin:0 auto;">
+        <img class="perk-img" src="perks/mister_sandman.png">
+        <div class="perk-desc"> As an agent of death, you can instantly kill a sleeping person. Your silenced weapons do an additional 15% sneak attack damage.
+        </div>
+      </div>
+  </div>
+    </div>
+
+
+    <nav class="navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                LEVEL 1
+                <div class="level-progress-big"> 
+                  <div class="level-progress-indicator w80"></div>
+                </div>
+            </div>
+            <div class="col-3">
+                AP 70/70
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script rel="stylesheet" src="js/bootstrap.js"></script>
+    <script rel="stylesheet" src="js/pipboy.app.js"></script>
+    
+</body>
+</html>
