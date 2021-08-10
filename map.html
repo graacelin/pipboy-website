@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- todos:
+  add back all the icons
+  fix gun poopy positioning
+  change all perk image positioning
+  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipboy</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/pipboy.app.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+  <div class="scan"></div>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="main-nav nav-link" aria-current="page" href="index.html">STAT</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link" href="inv.html">INV</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link" href="data.html">DATA</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link active" href="map.html">MAP</a>
+              </li>
+              <li class="nav-item">
+                <a class="main-nav nav-link" href="radio.html">RADIO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="map-image">
+          <img src="misc/map.jpg" alt="">
+      </div>
+
+
+    <nav class="navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                LEVEL 1
+                <div class="level-progress-big"> 
+                  <div class="level-progress-indicator w80"></div>
+                </div>
+            </div>
+            <div class="col-3">
+                AP 70/70
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script rel="stylesheet" src="js/bootstrap.js"></script>
+    <script rel="stylesheet" src="js/pipboy.app.js"></script>
+    
+</body>
+</html>

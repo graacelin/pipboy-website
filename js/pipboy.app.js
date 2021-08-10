@@ -237,6 +237,24 @@ $(document).ready(function() {
         }
     })
 
-
+    $('#playBtn').on('click', function (e) {
+       
+        if ($(e).hasClass('active')) {
+            $('audio')[0].pause();
+            $(e).removeClass('active');
+            console.log("hi")
+        } else {
+            $('audio')[0].play();
+            $(e).addClass('active');
+        }
+        
+      });
+      $('#stopBtn').on('click', function () {
+        $('audio')[0].pause();
+      });
+      $('#repBtn').on('click', function () {
+        $('audio')[0].currentTime = 0;
+        $('audio')[0].play();
+      });
 
 })

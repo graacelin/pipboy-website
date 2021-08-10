@@ -139,6 +139,15 @@ body::after {
     width: 125%;
 }
 
+.map-image {
+    text-align: center;
+}
+
+.map-image img {
+    margin-top:100px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(1) brightness(1) contrast(2);
+}
+
 .stat-bar {
     width: 60px;
     margin: auto;
@@ -603,6 +612,10 @@ body::after {
     z-index: 99;
     opacity: 0.25;
     pointer-events: none;
+}
+
+#mediPlay {
+    display:none;
 }
 
 @keyframes scan {
