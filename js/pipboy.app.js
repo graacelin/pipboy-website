@@ -239,13 +239,14 @@ $(document).ready(function() {
 
     $('#playBtn').on('click', function (e) {
        
-        if ($(e).hasClass('active')) {
+        if ($(e.currentTarget).hasClass('active')) {
             $('audio')[0].pause();
-            $(e).removeClass('active');
-            console.log("hi")
+            $(e.currentTarget).removeClass('active');
+
         } else {
             $('audio')[0].play();
-            $(e).addClass('active');
+            $(e.currentTarget).addClass('active');
+
         }
         
       });
