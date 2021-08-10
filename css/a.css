@@ -1,11 +1,11 @@
-.junk-list {
+.stats-list {
     float:left;
     padding:0px;
     list-style:none;
     margin:0px
 }
 
-.junk-list li a {
+.stats-list li a {
     display:block;
     width: 300px;
     padding: 5px 10px;
@@ -16,7 +16,7 @@
     
 }
 
-.junk-list a.active::before {
+.stats-list a.active::before {
     content: "";
     display: block;
     position: absolute;
@@ -29,17 +29,17 @@
 }
 
 
-.junk-list a.active:hover::before {
+.stats-list a.active:hover::before {
     background-color: #272b23;
 }
 
 
-.junk-list li a:hover {
+.stats-list li a:hover {
     background-color: #14fe17;
     color:#272b23;
 }
 
-#junk.tab-pane.full {
+#stats.tab-pane.full {
     width: 100%;
     max-width: 100%;
     margin-left: 2%;
@@ -47,7 +47,7 @@
     
 }
 
-.junk-stats {
+.stats-stats {
     position: absolute;
     right:2%;
     bottom:100px;
