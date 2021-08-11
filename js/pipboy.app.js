@@ -105,8 +105,6 @@ $(document).ready(function() {
     ]
 
 
-    
-
     $('.item-list a').on('click', function(e) {
         $('.item-list a').removeClass('active');
         $(e.currentTarget).addClass('active')
@@ -136,10 +134,6 @@ $(document).ready(function() {
         }
     })
 
-    $('.special-list a').on('click', function(e) {
-        $('.special-list a').removeClass('active');
-        $(e.currentTarget).addClass('active')
-    })
 
     $('.special-list a').on('mouseenter', function(e) {
         if ($(e.currentTarget).hasClass("active")) {
@@ -163,10 +157,6 @@ $(document).ready(function() {
 
     })
 
-    $('.perk-list a').on('click', function(e) {
-        $('.perk-list a').removeClass('active');
-        $(e.currentTarget).addClass('active')
-    })
 
     $('.perk-list a').on('mouseenter', function(e) {
         if ($(e.currentTarget).hasClass("active")) {
@@ -188,12 +178,6 @@ $(document).ready(function() {
         }
     })
 
-
-    $('.junk-list a').on('click', function(e) {
-        $('.junk-list a').removeClass('active');
-        $(e.currentTarget).addClass('active')
-    })
-
     $('.junk-list a').on('mouseenter', function(e) {
         if ($(e.currentTarget).hasClass("active")) {
             var current_item = $(e.currentTarget).removeClass('active').attr('class');
@@ -213,10 +197,6 @@ $(document).ready(function() {
         }
     })
 
-    $('.ammo-list a').on('click', function(e) {
-        $('.ammo-list a').removeClass('active');
-        $(e.currentTarget).addClass('active')
-    })
     
     $('.ammo-list a').on('mouseenter', function(e) {
         if ($(e.currentTarget).hasClass("active")) {
