@@ -294,7 +294,7 @@ body::after {
     
 }
 
-.item-list a.active::before {
+.item-list a.active_gun::before {
     content: "";
     display: block;
     position: absolute;
@@ -306,8 +306,7 @@ body::after {
 
 }
 
-
-.item-list a.active:hover::before {
+.item-list a.active_gun:hover::before {
     background-color: #272b23;
 }
 
@@ -335,7 +334,7 @@ body::after {
     
 }
 
-.special-list a.active::before {
+.special-list a.active_gun::before {
     content: "";
     display: block;
     position: absolute;
@@ -347,7 +346,7 @@ body::after {
 
 }
 
-.special-list a.active:hover::before {
+.special-list a.active_gun:hover::before {
     background-color: #272b23;
 }
 
