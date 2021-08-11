@@ -106,22 +106,24 @@ $(document).ready(function() {
 
 
     $('.item-list a').on('click', function(e) {
-        $('.item-list a').removeClass('active');
-        $(e.currentTarget).addClass('active')
+        $('.item-list a').removeClass('active_gun');
+        // $('.item-list a').removeClass('click');
+        $(e.currentTarget).addClass('active_gun')
+        // $(e.currentTarget).addClass('click')
     })
 
     $('.item-list a').on('mouseenter', function(e) {
-        if ($(e.currentTarget).hasClass("active")) {
-            var current_item = $(e.currentTarget).removeClass('active').attr('class');
-            $(e.currentTarget).addClass('active')
+        if ($(e.currentTarget).hasClass("active_gun")) {
+            var current_item = $(e.currentTarget).removeClass('active_gun').attr('class');
+            $(e.currentTarget).addClass('active_gun')
         } else {
             var current_item = $(e.currentTarget).attr('class');
         }
+
         console.log(current_item)
 
         for (item in weapons) {
             if (weapons[item].name == current_item) {
-                console.log(weapons[item])
 
                 var container = $('.item-stats');
                 container.find('.damage').html(weapons[item].damage);
@@ -133,6 +135,26 @@ $(document).ready(function() {
             }
         }
     })
+
+    $('.item-list a').on('mouseleave', function(e) {
+        var current_item = $(document.getElementsByClassName('active_gun')[0]).removeClass("active_gun").attr('class')
+        console.log(current_item)
+
+        for (item in weapons) {
+            if (weapons[item].name == current_item) {
+
+                var container = $('.item-stats');
+                container.find('.damage').html(weapons[item].damage);
+                container.find('.fire_rate').html(weapons[item].fire_rate);
+                container.find('.accuracy').html(weapons[item].accuracy);
+                container.find('.range').html(weapons[item].range);
+                container.find('.weight').html(weapons[item].weight);
+                container.find('.weapons-img').attr("src",weapons[item].img);
+            }
+        }
+        $(document.getElementsByClassName(current_item)[0]).addClass('active_gun');
+    })
+
 
 
     $('.special-list a').on('mouseenter', function(e) {
@@ -153,8 +175,6 @@ $(document).ready(function() {
                 container.find('.special-img').attr("src",specials[special].img);
             }
         }
-
-
     })
 
 
